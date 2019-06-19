@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E.Sun</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <!-- select -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-select.min.css">
+    <!-- dateRangePicker -->
+    <link rel="stylesheet" type="text/css" href="./daterangepicker.css" />
+    <!-- googleApi -->
+    <link rel="stylesheet" type="text/css" href="./googleapi.css">
+    <!-- clockpicker -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-clockpicker.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script type="text/javascript" src="./popper.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="./bootstrap.min.js"></script>
+
+    <!-- moment -->
+    <script type="text/javascript" src="./moment-2.18.1.min.js"></script>
+    <!-- fontawesome -->
+    <script src="./fontawesome.js"></script>
+    <!-- chart.js & plugin -->
+    <script src="./Chart.min-2.7.1.js"></script>
+    <script src="./chartjs-pieceLabel-plugin.js"></script>
+    <!-- dateRangePicker -->
+    <script type="text/javascript" src="./daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="./bootstrap-clockpicker.min.js"></script>
+    <!-- select -->
+    <script type="text/javascript" src="./bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-select-zh_TW.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid pl-0 pr-0">
+        <!-- sidebar -->
+        <div id="sidebar" class="sidebar maingreen">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link headtitle " href="# ">新平台</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link " href="M_customer_search.html">顧客查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfo">名單管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfo" class="ullistno panel-collapse collapse show" role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="M_namelist_search.html">
+                                名單查詢
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_myfavorite.html">
+                                我的最愛
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_todaytodo.html">
+                                今日行程
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_recheck.html">
+                                名單覆核
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_trans.html">
+                                名單分派
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Refferal_search.html">商機轉介查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoTwo">行銷專區
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoTwo" class="ullistno panel-collapse collapse " role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_loan.html">
+                                貸款試算
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_EDM.html">
+                                電子 DM
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_Map.html">
+                                行銷地圖
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_valuation.html">
+                                估價查詢
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoThree">後台管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoThree" class="ullistno panel-collapse collapse show" role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_character.html">
+                                角色權限
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_marketing.html">
+                                行銷團隊
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_email.html ">
+                                E-mail 樣板
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="M_Mange_notification.html">
+                                推播通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_arrange.html">
+                                總行指派案件
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_lateNotice.html">
+                                名單/案件逾期通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="M_Mange_tag.html">
+                                推薦產品標籤
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="M_Mange_productNum.html">
+                                產品參數
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_systemNum.html">
+                                系統參數
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="report_search.html">成效報表</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content" class="main-content">
+            <!-- navbar -->
+            <nav class="navbar navbar-light shadow sticky-top">
+                <form class="form-inline">
+                    <button type="button" onclick="toggle()" class="btn openClose">
+                        <i class="fa fa-caret-left iconspace" aria-hidden="true"></i>
+                    </button>
+                    <div class="input-group">
+                        <span class="input-group-addon inputstyle" id="basic-addon1">
+                            <i class="fa fa-search " aria-hidden="true"></i>
+                        </span>
+                        <input type="text" class="form-control inputstyle" placeholder="搜尋整站..." aria-describedby="basic-addon1">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="btn-group">
+                        <button type="button" class="btn notic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell iconspace fa-lg" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-bell">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading pr-3 pl-3">
+                                                    我的通知
+                                                    <a class="greenLink float-right">標示全部為已讀</a>
+                                                </div>
+                                                <div class="panel-body">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="read">
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-center">
+                                                    <a class="greenLink ">查看歷史通知</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn dropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre " style="width:40px; height:40px; ">
+                            <i class="fa fa-angle-down iconspace" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-person">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading pr-3 pl-3 pt-3 pb-4">
+                                                    <div class="row">
+                                                        <div class="col-4 ">
+
+
+                                                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre" style="width: 80px;height: 80px; position:absolute;">
+
+
+
+                                                        </div>
+                                                        <div class="col-6 pt-4">
+                                                            <span>你好，王小圖</span>
+                                                            <br />
+                                                            <span class="sub-tit">123123@esun.bank.com</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body pt-3">
+
+
+                                                    <a class="dropdown-item" href="#">切換代理人</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalREST" data-whatever="@mdo">休假代理</a>
+                                                    <a class="dropdown-item" href="#" onclick="{location.href='./login.html' }">登出</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </nav>
+            <!-- 休假代理 -->
+            <div class="modal fade" id="exampleModalREST" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">休假代理</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假起始日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假起始時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假結束日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假結束時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>代理人
+                                        <span class="markRed">*</span>
+                                    </label>
+                                    <select class="selectpicker inputstyleSelect">
+                                        <option value="" class="displayno">請選擇...</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                            <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 顧客查詢 -->
+            <section>
+                <nav class="navbar justify-content-between panel-head ">
+                    <span class="navbar-brand ">推播通知設定
+
+                    </span>
+
+                    <ul class="nav float-lg-right float-sm-none nav-function-btn">
+                        <li>
+
+                            <div class="nav-link " href="#">
+                                <span class="textGary">排序</span>
+
+                                <button class="btn dropdown-toggle mb-1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    最近
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right-sorting">
+                                    <a class="dropdown-item " href="# ">名單狀態</a>
+                                    <a class="dropdown-item " href="# ">分派/建立日期</a>
+                                    <a class="dropdown-item " href="# ">統一編號</a>
+                                    <a class="dropdown-item " href="# ">戶名</a>
+                                    <a class="dropdown-item " href="# ">行銷單位</a>
+                                    <a class="dropdown-item " href="# ">行銷人員</a>
+                                    <a class="dropdown-item " href="# ">產品</a>
+                                    <a class="dropdown-item " href="# ">名單來源</a>
+                                    <a class="dropdown-item " href="# ">名單類型</a>
+                                </div>
+
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <button type="button" class="nav-link btn" data-toggle="modal" data-target="#Addnotic" data-whatever="@mdo ">
+                                <i class="fa fa-plus iconspace" aria-hidden="true">
+                                </i>新增推播通知</button>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <div id="search-section-0" class="form-row mr-0 area ">
+
+                    <div class="form-group col-md-2 ">
+                        <label>狀態
+
+                        </label>
+                        <select class="selectpicker inputstyleSelect">
+                            <option value="" class="displayno">請選擇...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2 ">
+                        <label>標題</label>
+
+                        <input type="text" class="form-control inputstyle" placeholder="以關鍵字搜尋...">
+
+                    </div>
+                    <div class="form-group col-md-2 ">
+                        <label>建立人
+
+                        </label>
+                        <select class="selectpicker inputstyleSelect">
+                            <option value="" class="displayno">請選擇...</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+                <div id="search-section-0" class="form-row mr-0  area shadow">
+
+
+
+                    <div class="form-group col-md-2 ">
+                        <label>發布日期
+
+                        </label>
+                        <div class="input-group date">
+                            <input type="text" class="form-control inputstyle datepicker" id="datepicker4">
+                            <span class="input-group-addon-date inputstyle" onclick="openDatePicker('datepicker4')">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2 ">
+                        <label>結束日期
+
+                        </label>
+                        <div class="input-group date">
+                            <input type="text" class="form-control inputstyle datepicker" id="datepicker5">
+                            <span class="input-group-addon-date inputstyle" onclick="openDatePicker('datepicker5')">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+
+
+
+                    <div class=" col-md-2 search-btn-pad">
+                        <button id="searchBtn-0" type="button " class="btn btn-ylw " onclick="onSearchCust()" disabled>
+                            <i class="fa fa-search iconspace" aria-hidden="true"></i>搜尋</button>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+            <!--  表單 -->
+            <div id="data-list-0" class="table-responsive data-list">
+
+                <table class="table table-striped tableinfo">
+                    <thead>
+                        <tr>
+                            <th scope="col ">標題</th>
+                            <th scope="col ">建立者</th>
+                            <th scope="col ">建立日期</th>
+                            <th scope="col ">發佈日期</th>
+                            <th scope="col ">有效日期</th>
+                            <th scope="col ">覆核主管</th>
+                            <th scope="col ">狀態
+
+                            </th>
+                            <th scope="col "></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>「玉山網路投保」暨「玉山安心保」行銷活動上線</td>
+                            <td>陳先生</td>
+                            <td>2018/03/08</td>
+                            <td>2018/03/23</td>
+                            <td>2018/03/23</td>
+                            <td>Vivian Chen</td>
+                            <td>暫存</td>
+                            <td>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Viewnotic" data-whatever="@mdo">
+                                    檢視
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Editnotic" data-whatever="@mdo">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="markRed">
+                            <td>瑞光分行、沙鹿分行開業活動</td>
+                            <td>馬力歐</td>
+                            <td>2018/03/08</td>
+                            <td>2018/03/23</td>
+                            <td>2018/03/23</td>
+                            <td>Tommy Wang</td>
+                            <td>待覆核</td>
+                            <td>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Viewnotic" data-whatever="@mdo">
+                                    檢視
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Editnotic" data-whatever="@mdo">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>「玉山網路投保」暨「玉山安心保」行銷活動上線</td>
+                            <td>陳先生</td>
+                            <td>2018/03/08</td>
+                            <td>2018/03/23</td>
+                            <td>2018/03/23</td>
+                            <td>Vivian Chen</td>
+                            <td>生效</td>
+                            <td>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Viewnotic" data-whatever="@mdo">
+                                    檢視
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Editnotic" data-whatever="@mdo">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="markgary">
+                            <td>「玉山網路投保」暨「玉山安心保」行銷活動上線</td>
+                            <td>陳先生</td>
+                            <td>2018/03/08</td>
+                            <td>2018/03/23</td>
+                            <td>2018/03/23</td>
+                            <td>Vivian Chen</td>
+                            <td>停用</td>
+                            <td>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Viewnotic" data-whatever="@mdo"
+                                    disabled>
+                                    檢視
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" style="padding: 5px 15px;" data-toggle="modal" data-target="#Editnotic" data-whatever="@mdo"
+                                    disabled>
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- pageNum -->
+            <!--<nav class="navNum navbar-light">
+                    <form class="form-inline">
+                        <div>
+                            <button class=" btn-sm pageNum">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </button>
+                            <button class=" btn-sm pageNum">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </button>
+                            <span class="loanChartNote">1-1 of 1</span>
+                        </div>
+                        <div>
+                            <span class="loanChartNote">Items per page:
+                                <select class="selectpicker inputstyleSelect">
+                                    <option>1</option>
+                                </select>
+                            </span>
+                        </div>
+                    </form>
+                </nav> -->
+        </div>
+
+        <!-- 新增推播通知 -->
+        <div class="modal fade" id="Addnotic" tabindex="-1" role="dialog" aria-labelledby="Addnotic" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="Addnotic">新增推播通知</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>標題</label>
+                                <input type="text" class="form-control inputstyle" placeholder="請輸入...">
+                            </div>
+                            <div class="form-group">
+                                <label>內文</label>
+                                <textarea class="form-control inputstyletextArea" rows="5" placeholder="請輸入..."></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>建立者</label>
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">馬力歐</option>
+                                            <option data-tokens="mustard">科四海</option>
+                                            <option data-tokens="frosting">林熟分</option>
+                                            <option data-tokens="ketchup mustard">陳美琳</option>
+                                            <option data-tokens="mustard">理完稅</option>
+                                            <option data-tokens="frosting">陳沼澤</option>
+                                        </select>
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>覆核主管</label>
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">馬力歐</option>
+                                            <option data-tokens="mustard">科四海</option>
+                                            <option data-tokens="frosting">林熟分</option>
+                                            <option data-tokens="ketchup mustard">陳美琳</option>
+                                            <option data-tokens="mustard">理完稅</option>
+                                            <option data-tokens="frosting">陳沼澤</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>重要性
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <div class="form-row">
+                                            <div class="form-check">
+                                                <input id="customer" name="client" checked="true" type="radio" style="cursor: pointer;">
+                                                <label for="customer" style="cursor: pointer;">重要</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input id="company" name="client" type="radio">
+                                                <label for="company" style="cursor: pointer;">一般</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>發佈日期</label>
+                                        <input class="form-control inputstyle" type="date" placeholder="請選擇日期..." id="example-date-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>發布對象
+
+                                        </label>
+
+                                        <select class="selectpicker inputstyleSelect">
+                                            <option value="" class="displayno">請選擇...</option>
+                                            <option>職系</option>
+                                            <option>經辦</option>
+
+
+                                        </select>
+                                    </div>
+                                    <div class="col mr-3 pt-1">
+                                        <label></label>
+
+                                        <select class="selectpicker inputstyleSelect">
+                                            <option value="" class="displayno">請選擇...</option>
+                                            <option>理大壕</option>
+                                            <option>理大壕</option>
+                                            <option>理大壕</option>
+                                            <option>理大壕</option>
+
+                                        </select>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                        <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 編輯推播通知 -->
+        <div class="modal fade" id="Editnotic" tabindex="-1" role="dialog" aria-labelledby="Editnotic" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="Editnotic">編輯推播通知
+                            <span class="tag square orange ml-2">暫存</span>
+                        </h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>標題</label>
+                                <input type="text" class="form-control inputstyle" value="「玉山網路投保」暨「玉山安心保」行銷活動上線">
+                            </div>
+                            <div class="form-group">
+                                <label>內文</label>
+                                <textarea class="form-control inputstyle  " rows="5">感謝您的愛護，2018年3月12日起，頭份分行於苗栗縣頭份市中央路56號提供您優質的金融服務，歡迎您繼續支持與指導！ 服務項目：企業金融、消費金融、存款、個人理財、共同基金、代理收付、信用卡、匯兌、電子銀行、便捷金融區、外匯指定銀行等業務。
+                                </textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>建立者</label>
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">李維維</option>
+                                            <option data-tokens="mustard">科四海</option>
+                                            <option data-tokens="frosting">林熟分</option>
+                                            <option data-tokens="ketchup mustard">陳美琳</option>
+                                            <option data-tokens="mustard">理完稅</option>
+                                            <option data-tokens="frosting">陳沼澤</option>
+                                        </select>
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>覆核主管</label>
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Vivian Chen</option>
+                                            <option data-tokens="mustard">科四海</option>
+                                            <option data-tokens="frosting">林熟分</option>
+                                            <option data-tokens="ketchup mustard">陳美琳</option>
+                                            <option data-tokens="mustard">理完稅</option>
+                                            <option data-tokens="frosting">陳沼澤</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>重要性
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <div class="form-row">
+                                            <div class="form-check">
+                                                <input id="customer" name="client" checked="true" type="radio" style="cursor: pointer;">
+                                                <label for="customer" style="cursor: pointer;">重要</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input id="company" name="client" type="radio">
+                                                <label for="company" style="cursor: pointer;">一般</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>發佈日期</label>
+                                        <input class="form-control inputstyle" type="date" placeholder="請選擇日期..." id="example-date-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>發布對象
+
+                                        </label>
+
+                                        <select class="selectpicker inputstyleSelect">
+
+                                            <option>職系</option>
+                                            <option>經辦</option>
+
+
+                                        </select>
+                                    </div>
+                                    <div class="col mr-3 pt-1">
+                                        <label></label>
+
+                                        <select class="selectpicker inputstyleSelect">
+
+                                            <option>全部</option>
+                                            <option>理大壕</option>
+                                            <option>理大壕</option>
+                                            <option>理大壕</option>
+
+                                        </select>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                        <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 檢視 -->
+        <div class="modal fade" id="Viewnotic" tabindex="-1" role="dialog" aria-labelledby="Viewnotic" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="Viewnotic">「玉山網路投保」暨「玉山安心保」行銷活動上線
+                            <span class="tag square blue ml-2">生效</span>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>感謝您的愛護，2018年3月12日起，頭份分行於苗栗縣頭份市中央路56號提供您優質的金融服務，歡迎您繼續支持與指導！ 服務項目：企業金融、消費金融、存款、個人理財、共同基金、代理收付 、信用卡、匯兌、電子銀行、便捷金融區、外匯指定銀行等業務。</p>
+                        <div class="dropdown-divider mb-4"></div>
+                        <form class="mb-4">
+                            <div class="col-12 pl-0 mt-2">
+                                <h6 class="topform-tit">建立者</h6>
+                                <h6 class="form-body">李維維</h6>
+                            </div>
+                            <div class="col-12 pl-0 mt-2">
+                                <h6 class="topform-tit">覆核主管</h6>
+                                <h6 class="form-body">Vivian Chen</h6>
+                            </div>
+                            <div class="col-12 pl-0 mt-2">
+                                <h6 class="topform-tit">建立日期</h6>
+                                <h6 class="form-body">2018/03/23</h6>
+                            </div>
+                            <div class="col-12 pl-0 mt-2">
+                                <h6 class="topform-tit">發布日期</h6>
+                                <h6 class="form-body">2018/03/23</h6>
+                            </div>
+                            <div class="col-12 pl-0 mt-2">
+                                <h6 class="topform-tit">發佈對象</h6>
+                                <h6 class="form-body">職系 - 行銷職系經辦</h6>
+                            </div>
+
+
+                        </form>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                            <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">寄出</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+</body>
+
+<script>
+    var custType = 0;
+    var custID = '';
+    var custIDIValid = true;
+    $(document).ready(function () {
+        // clockpicker
+        $('input[name=clockpicker]').clockpicker({
+            autoclose: true,
+        });
+
+        // fix two step modal problem
+        $(document).on('shown.bs.modal', '.modal', function () {
+            $(document.body).addClass('modal-open')
+        })
+        $(document).on('hidden.bs.modal', '.modal', function () {
+            $(document.body).removeClass('modal-open')
+        })
+
+        $('.selectpicker').selectpicker({
+            style: 'inputstyleSelect',
+
+        });
+        // daterange 
+        var year = new Date().getFullYear() + 100;
+
+        $('input[name="daterange"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                'YYYY/MM/DD'));
+        });
+        $('input[name="daterange"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /**/
+        // singedate
+        $('input[name="singledate"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            singleDatePicker: true,
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="singledate"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD'));
+        });
+        $('input[name="singledate"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /**/
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    // sidebar toggle
+    function toggle() {
+        var width = document.getElementById("sidebar").style.width;
+
+        if (width === "180px" || width === "") {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("main-content").style.marginLeft = "0px";
+            $('.top-container').css({
+                width: '100%'
+            })
+            $('button.btn.openClose i').removeClass('fa-caret-left').addClass('fa-caret-right');
+        } else {
+            document.getElementById("sidebar").style.width = "180px";
+            document.getElementById("main-content").style.marginLeft = "180px";
+            $('.top-container').css('width', '100%').css('width', '-=180px');
+            $('button.btn.openClose i').removeClass('fa-caret-right').addClass('fa-caret-left');
+        }
+    }
+
+    function openDatePicker(id) {
+        console.log('aaa')
+        var did = "#" + id
+        $(did).datepicker('show');
+    }
+</script>
+
+<script id="search_error" type="text/template">
+    <div class="nodata">
+        <div>
+            <img src="../img/img_empty.png" class="d-inline-block align-top" alt="">
+        </div>
+        <h6>查無資料</h6>
+
+    </div>
+</script>
+
+</html>

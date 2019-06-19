@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E.Sun</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <!-- select -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-select.min.css">
+    <!-- dateRangePicker -->
+    <link rel="stylesheet" type="text/css" href="./daterangepicker.css" />
+    <!-- googleApi -->
+    <link rel="stylesheet" type="text/css" href="./googleapi.css">
+    <!-- clockpicker -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-clockpicker.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script type="text/javascript" src="./popper.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="./bootstrap.min.js"></script>
+
+    <!-- moment -->
+    <script type="text/javascript" src="./moment-2.18.1.min.js"></script>
+    <!-- fontawesome -->
+    <script src="./fontawesome.js"></script>
+    <!-- chart.js & plugin -->
+    <script src="./Chart.min-2.7.1.js"></script>
+    <script src="./chartjs-pieceLabel-plugin.js"></script>
+    <!-- dateRangePicker -->
+    <script type="text/javascript" src="./daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="./bootstrap-clockpicker.min.js"></script>
+    <!-- select -->
+    <script type="text/javascript" src="./bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-select-zh_TW.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid pl-0 pr-0">
+        <!-- sidebar -->
+        <div id="sidebar" class="sidebar maingreen">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link headtitle " href="# ">新平台</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link " href="customer_search.html">顧客查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfo">名單管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfo" class="ullistno panel-collapse collapse " role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namelist_search.html">
+                                名單查詢
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="namelist_search_myfavorite.html">
+                                我的最愛
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="namelist_search_todaytodo.html">
+                                今日行程
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Refferal_search.html">商機轉介查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoTwo">行銷專區
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoTwo" class="ullistno panel-collapse collapse show" role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_loan.html">
+                                貸款試算
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_EDM.html">
+                                電子 DM
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_Map.html">
+                                行銷地圖
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="marketing_search_valuation.html">
+                                估價查詢
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoThree">後台管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoThree" class="ullistno panel-collapse collapse " role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_character.html">
+                                角色權限
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_marketing.html">
+                                行銷團隊
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_email.html ">
+                                E-mail 樣板
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_notification.html">
+                                推播通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_arrange.html">
+                                總行指派案件
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_lateNotice.html">
+                                名單/案件逾期通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Mange_tag.html">
+                                推薦產品標籤
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Mange_productNum.html">
+                                產品參數
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_systemNum.html">
+                                系統參數
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="report_search.html">成效報表</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content" class="main-content">
+            <!-- navbar -->
+            <nav class="navbar navbar-light shadow sticky-top">
+                <form class="form-inline">
+                    <button type="button" onclick="toggle()" class="btn openClose">
+                        <i class="fa fa-caret-left iconspace" aria-hidden="true"></i>
+                    </button>
+                    <div class="input-group">
+                        <span class="input-group-addon inputstyle" id="basic-addon1">
+                            <i class="fa fa-search " aria-hidden="true"></i>
+                        </span>
+                        <input type="text" class="form-control inputstyle" placeholder="搜尋整站..." aria-describedby="basic-addon1">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="btn-group">
+                        <button type="button" class="btn notic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell iconspace fa-lg" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-bell">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading pr-3 pl-3">
+                                                    我的通知
+                                                    <a class="greenLink float-right">標示全部為已讀</a>
+                                                </div>
+                                                <div class="panel-body">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="read">
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-center">
+                                                    <a class="greenLink ">查看歷史通知</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn dropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre " style="width:40px; height:40px; ">
+                            <i class="fa fa-angle-down iconspace" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-person">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                 <div class="panel-heading pr-3 pl-3 pt-3 pb-4">
+                                                    <div class="row">
+                                                        <div class="col-4 ">
+
+
+                                                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre" style="width: 80px;height: 80px; position:absolute;">
+
+
+
+                                                        </div>
+                                                        <div class="col-6 pt-4">
+                                                            <span>你好，王小圖</span>
+                                                            <br />
+                                                            <span class="sub-tit">123123@esun.bank.com</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body pt-3">
+
+
+                                                    <a class="dropdown-item" href="#">切換代理人</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalREST" data-whatever="@mdo">休假代理</a>
+                                                    <a class="dropdown-item" href="#" onclick="{location.href='./login.html' }">登出</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </nav>
+            <!-- 休假代理 -->
+            <div class="modal fade" id="exampleModalREST" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">休假代理</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假起始日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假起始時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假結束日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假結束時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>代理人
+                                        <span class="markRed">*</span>
+                                    </label>
+                                    <select class="selectpicker inputstyleSelect">
+                                        <option value="" class="displayno">請選擇...</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                            <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 顧客查詢 -->
+            <section>
+                <nav class="navbar justify-content-between panel-head ">
+                    <span class="navbar-brand ">估價查詢</span>
+
+                </nav>
+
+
+                <div id="search-section-0" class="form-row mr-0 area ">
+                    <div class="form-group col-md-2">
+                        <label>查詢項目
+                            <span class="markRed">*</span>
+                        </label>
+                        <div class="form-row">
+                            <div class="form-check">
+                                <input id="woman" name="gender" checked="true" type="radio">
+                                <label for="woman" style="cursor: pointer;">建物</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="man" name="gender" type="radio">
+                                <label for="man" style="cursor: pointer;">土地</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>鑑價日期</label>
+                        <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇日期...">
+                    </div>
+                    <div class="form-group col-md-1">
+                        <label>所在地</label>
+
+                        <select class="selectpicker inputstyleSelect">
+                            <option selected>縣市</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-1 oneline">
+
+
+                        <select class="selectpicker inputstyleSelect">
+                            <option selected>行政區</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 oneline">
+
+                        <input type="password" class="form-control iconspace inputstyle col-10" placeholder="請輸入地址">
+
+                    </div>
+
+
+
+
+                </div>
+                <div id="search-section-0" class="form-row mr-0  area shadow">
+
+
+
+                    <div class="form-group col-md-2">
+                        <label>授信戶
+
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control inputstyle" placeholder="請輸入">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label>統一編號</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control inputstyle" placeholder="e.g. A992883771">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>不動產類型</label>
+                        <div id="house" class="dropdown ">
+                            <button class="btn inputstyle dropdown-toggle col-12 dropchoose" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="btn-text">請選擇</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-stop" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="javascript:void(0)" onclick="chooseAll(true, '#house')">全選</a>
+                                <a class="dropdown-item" href="javascript:void(0)" onclick="chooseAll(false, '#house')">取消全選</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="form-check form-check-inline dropdown-item">
+                                    <input class="form-check-input" type="checkbox" id="house_1" value="華廈">
+                                    <label class="form-check-label" for="house_1">華廈</label>
+                                </div>
+                                <div class="form-check form-check-inline dropdown-item">
+                                    <input class="form-check-input" type="checkbox" id="house_2" value="店面">
+                                    <label class="form-check-label" for="house_2">店面</label>
+                                </div>
+                                <div class="form-check form-check-inline dropdown-item">
+                                    <input class="form-check-input" type="checkbox" id="house_3" value="套房">
+                                    <label class="form-check-label" for="house_3">套房</label>
+                                </div>
+                                <div class="form-check form-check-inline dropdown-item">
+                                    <input class="form-check-input" type="checkbox" id="house_4" value="公寓">
+                                    <label class="form-check-label" for="house_4">公寓</label>
+                                </div>
+                                <div class="form-check form-check-inline dropdown-item">
+                                    <input class="form-check-input" type="checkbox" id="house_5" value="車位">
+                                    <label class="form-check-label" for="house_5">車位</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>社區名稱</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control inputstyle" placeholder="請輸入">
+                        </div>
+
+                    </div>
+                    <div class=" col-md-2 search-btn-pad">
+                        <button id="searchBtn-0" type="button " class="btn btn-ylw " onclick="search('house')">
+                            <i class="fa fa-search iconspace" aria-hidden="true"></i>搜尋</button>
+
+                    </div>
+                    <div id="house_result" class="col-12 border-top pt-3 pb-3 displayno">
+                        <span class="ps_note">不動產類型 (5)</span>
+                        <span class="choosen">華廈、店面、套房、公寓、車位</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Customer 表單 -->
+            <div id="result_1" class="table-responsive data-list displayno">
+                <table class="table table-striped tableinfo">
+                    <thead>
+                        <tr>
+                            <th scope="col ">資訊來源</th>
+                            <th scope="col ">鑑價日期</th>
+                            <th scope="col ">建物門牌/土地地段</th>
+                            <th scope="col " class="money-right">總價(萬元)</th>
+                            <th scope="col " class="money-right">土地坪數</th>
+                            <th scope="col " class="money-right">建物坪數</th>
+                            <th scope="col " class="money-right">單坪價(萬元)</th>
+                            <th scope="col ">樓層/總樓層</th>
+                            <th scope="col ">完工日期</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>本行鑑估</td>
+                            <td>0106/12/27</td>
+                            <td class="alink">台北市松山區民生東路三段 115 號及117 號</td>
+                            <td class="money-right">80,000</td>
+                            <td class="money-right">9</td>
+                            <td class="money-right">26.04</td>
+                            <td class="money-right">44.2</td>
+                            <td>3/005</td>
+                            <td>0106/12/27</td>
+                        </tr>
+                        <tr>
+                            <td>實價登錄</td>
+                            <td>0106/12/27</td>
+                            <td class="alink">台北市松山區民生東路三段 115 號及117 號</td>
+                            <td class="money-right">236,700</td>
+                            <td class="money-right">3.54</td>
+                            <td class="money-right">26.04</td>
+                            <td class="money-right">44.2</td>
+                            <td>3/005</td>
+                            <td>0106/12/27</td>
+                        </tr>
+                        <tr>
+                            <td>本行鑑估</td>
+                            <td>0106/12/27</td>
+                            <td class="alink">台北市松山區民生東路三段 115 號及117 號</td>
+                            <td class="money-right">80,000</td>
+                            <td class="money-right">9.54</td>
+                            <td class="money-right">16.</td>
+                            <td class="money-right">44.2</td>
+                            <td>5/005</td>
+                            <td>0106/12/27</td>
+                        </tr>
+                        <tr>
+                            <td>實價登錄</td>
+                            <td>0106/12/27</td>
+                            <td class="alink">台北市松山區民生東路三段 115 號及117 號</td>
+                            <td class="money-right">236,700</td>
+                            <td class="money-right">9.54</td>
+                            <td class="money-right">26.04</td>
+                            <td class="money-right">44.2</td>
+                            <td>3/005</td>
+                            <td>0106/12/27</td>
+                        </tr>
+                        <tr>
+                            <td>本行鑑估</td>
+                            <td>0106/12/27</td>
+                            <td class="alink">台北市松山區民生東路三段 115 號及117 號</td>
+                            <td class="money-right">80,000</td>
+                            <td class="money-right">9.54</td>
+                            <td class="money-right">26.04</td>
+                            <td class="money-right">44.2</td>
+                            <td>3/005</td>
+                            <td>0106/12/27</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- pageNum -->
+                <nav class="navNum navbar-light">
+                    <form class="form-inline">
+                        <div>
+                            <button class=" btn-sm pageNum">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </button>
+                            <button class=" btn-sm pageNum">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </button>
+                            <span class="loanChartNote">1 of 1</span>
+                        </div>
+                        <div>
+                            <span class="loanChartNote">Items per page:
+                                <select class="form-control inputstyle">
+                                    <option>50</option>
+                                </select>
+                            </span>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+<script>
+    var custType = 0;
+    var custID = '';
+    var custIDIValid = true;
+    $(document).ready(function () {
+        // clockpicker
+        $('input[name=clockpicker]').clockpicker({
+            autoclose: true,
+        });
+        // fix two step modal problem
+        $(document).on('shown.bs.modal', '.modal', function () {
+            $(document.body).addClass('modal-open')
+        })
+        $(document).on('hidden.bs.modal', '.modal', function () {
+            $(document.body).removeClass('modal-open')
+        })
+        $('[data-toggle="tooltip"]').tooltip();
+        $('.selectpicker').selectpicker({
+            style: 'inputstyleSelect',
+
+        });
+        // daterange 
+        var year = new Date().getFullYear() + 100;
+
+        $('input[name="daterange"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                'YYYY/MM/DD'));
+        });
+        $('input[name="daterange"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /**/
+        // singedate
+        $('input[name="singledate"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            singleDatePicker: true,
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="singledate"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD'));
+        });
+        $('input[name="singledate"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /**/
+        // dropdown-menu-stop 
+        $(document).on('click', '.dropdown-menu-stop', function (e) {
+            e.stopPropagation();
+        });
+        $('input[type=checkbox].form-check-input').on('change', function () {
+            var id = '#' + $(this).closest('.form-check').closest(
+                '.dropdown-menu.dropdown-menu-stop').closest('.dropdown')[0].id;
+            var strings = [];
+            $(id).find('.dropdown-menu.dropdown-menu-stop').children().each(function () {
+                var checked = $(this).find('input').prop('checked')
+                if (checked) {
+                    strings.push($(this).find('input').val())
+                }
+            })
+            var buttonTitle = strings.length == 0 ? '請選擇' : strings.join(', ');
+            $(id).find('.btn-text').text(buttonTitle)
+        })
+    });
+
+    // sidebar toggle
+    function toggle() {
+        var width = document.getElementById("sidebar").style.width;
+
+        if (width === "180px" || width === "") {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("main-content").style.marginLeft = "0px";
+            $('.top-container').css({
+                width: '100%'
+            })
+            $('button.btn.openClose i').removeClass('fa-caret-left').addClass('fa-caret-right');
+        } else {
+            document.getElementById("sidebar").style.width = "180px";
+            document.getElementById("main-content").style.marginLeft = "180px";
+            $('.top-container').css('width', '100%').css('width', '-=180px');
+            $('button.btn.openClose i').removeClass('fa-caret-right').addClass('fa-caret-left');
+        }
+    }
+
+    function openDatePicker(id) {
+        console.log('aaa')
+        var did = "#" + id
+        $(did).datepicker('show');
+    }
+
+    function search(dropdown_id) {
+        setChooseResult(dropdown_id)
+        this.showElement('result_1');
+        this.showElement('house_result')
+    }
+
+    function showElement(id) {
+        $('#' + id).removeClass('displayno');
+    }
+
+    function chooseAll(toggle, id) {
+        $(id).find('.dropdown-menu.dropdown-menu-stop').children().each(function () {
+            $(this).find('input').prop('checked', toggle);
+            $(this).find('input').trigger('change');
+        })
+    }
+
+    // dropdown choose set result
+    function setChooseResult(id) {
+        var choose = [];
+        $('#' + id).find('.dropdown-menu.dropdown-menu-stop').children().each(function () {
+            var checked = $(this).find('input').prop('checked')
+            if (checked) {
+                choose.push($(this).find('input').val())
+            }
+        })
+        var count = choose ? choose.length : 0;
+        var countString = '不動產類型 (' + count + ')';
+        var chooseString = choose.join(', ');
+
+        var result_id = '#' + id + '_result';
+        var noteSelector = result_id + ' span.ps_note';
+        var choosenSelector = result_id + ' span.choosen';
+        $(noteSelector).text(countString);
+        $(choosenSelector).text(chooseString);
+    }
+</script>
+
+<script id="search_error" type="text/template">
+    <div class="nodata">
+        <div>
+            <img src="../img/img_empty.png" class="d-inline-block align-top" alt="">
+        </div>
+        <h6>查無資料</h6>
+
+    </div>
+</script>
+
+</html>

@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E.Sun</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <!-- select -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-select.min.css">
+    <!-- dateRangePicker -->
+    <link rel="stylesheet" type="text/css" href="./daterangepicker.css" />
+    <!-- googleApi -->
+    <link rel="stylesheet" type="text/css" href="./googleapi.css">
+    <!-- clockpicker -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-clockpicker.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script type="text/javascript" src="./popper.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="./bootstrap.min.js"></script>
+
+    <!-- moment -->
+    <script type="text/javascript" src="./moment-2.18.1.min.js"></script>
+    <!-- fontawesome -->
+    <script src="./fontawesome.js"></script>
+    <!-- chart.js & plugin -->
+    <script src="./Chart.min-2.7.1.js"></script>
+    <script src="./chartjs-pieceLabel-plugin.js"></script>
+    <!-- dateRangePicker -->
+    <script type="text/javascript" src="./daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="./bootstrap-clockpicker.min.js"></script>
+    <!-- select -->
+    <script type="text/javascript" src="./bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-select-zh_TW.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid pl-0 pr-0">
+        <!-- sidebar -->
+        <div id="sidebar" class="sidebar maingreen">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link headtitle " href="# ">新平台</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link " href="customer_search.html">顧客查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfo">名單管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfo" class="ullistno panel-collapse collapse show" role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="M_namelist_search.html">
+                                名單查詢
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_myfavorite.html">
+                                我的最愛
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_todaytodo.html">
+                                今日行程
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_recheck.html">
+                                名單覆核
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_trans.html">
+                                名單分派
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Refferal_search.html">商機轉介查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoTwo">行銷專區
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoTwo" class="ullistno panel-collapse collapse " role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_loan.html">
+                                貸款試算
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  " href="marketing_search_EDM.html">
+                                電子 DM
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_Map.html">
+                                行銷地圖
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_valuation.html">
+                                估價查詢
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoThree">後台管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoThree" class="ullistno panel-collapse collapse " role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_character.html">
+                                角色權限
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_marketing.html">
+                                行銷團隊
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_email.html ">
+                                E-mail 樣板
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_notification.html">
+                                推播通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_arrange.html">
+                                總行指派案件
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_lateNotice.html">
+                                名單/案件逾期通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Mange_tag.html">
+                                推薦產品標籤
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Mange_productNum.html">
+                                產品參數
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Mange_systemNum.html">
+                                系統參數
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="report_search.html">成效報表</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content" class="main-content">
+            <!-- navbar -->
+            <nav class="navbar navbar-light shadow sticky-top">
+                <form class="form-inline">
+                    <button type="button" onclick="toggle()" class="btn openClose">
+                        <i class="fa fa-caret-left iconspace" aria-hidden="true"></i>
+                    </button>
+                    <div class="input-group">
+                        <span class="input-group-addon inputstyle" id="basic-addon1">
+                            <i class="fa fa-search " aria-hidden="true"></i>
+                        </span>
+                        <input type="text" class="form-control inputstyle" placeholder="搜尋整站..." aria-describedby="basic-addon1">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="btn-group">
+                        <button type="button" class="btn notic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell iconspace fa-lg" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-bell">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading pr-3 pl-3">
+                                                    我的通知
+                                                    <a class="greenLink float-right">標示全部為已讀</a>
+                                                </div>
+                                                <div class="panel-body">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="read">
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-center">
+                                                    <a class="greenLink ">查看歷史通知</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn dropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre " style="width:40px; height:40px; ">
+                            <i class="fa fa-angle-down iconspace" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-person">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                 <div class="panel-heading pr-3 pl-3 pt-3 pb-4">
+                                                    <div class="row">
+                                                        <div class="col-4 ">
+
+
+                                                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre" style="width: 80px;height: 80px; position:absolute;">
+
+
+
+
+                                                        </div>
+                                                        <div class="col-6 pt-4">
+                                                            <span>你好，王小圖</span>
+                                                            <br />
+                                                            <span class="form-tit">123123@esun.bank.com</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body pt-3">
+
+
+                                                    <a class="dropdown-item" href="#">切換代理人</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalREST" data-whatever="@mdo">休假代理</a>
+                                                    <a class="dropdown-item" href="#" onclick="{location.href='./login.html' }">登出</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </nav>
+            <!-- 休假代理 -->
+            <div class="modal fade" id="exampleModalREST" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">休假代理</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假起始日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假起始時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假結束日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假結束時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>代理人
+                                        <span class="markRed">*</span>
+                                    </label>
+                                    <select class="selectpicker inputstyleSelect">
+                                        <option value="" class="displayno">請選擇...</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                            <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 麵包削 -->
+            <nav class="clearfix nav-top">
+                <ol class="breadcrumb float-lg-left float-sm-none mb-sm-0">
+                    <li class="breadcrumb-item">
+                        <a href="M_namelist_search_trans.html">名單分派</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">總行指派案件</li>
+                </ol>
+
+            </nav>
+            <section>
+
+                <div class="info-area">
+
+                    <h4 class="name">
+                        <span>日本東京來回機票資格審核名單</span>
+
+                    </h4>
+                    <div class="row no-gutters listinfoarea collapse show" id="collapseInfo" aria-labelledby="headingInfo" data-parent="#Infoaccordion">
+                        <div class="col-lg-4  col-sm-12 col-md-12">
+                            <ul class="listinfo">
+
+                                <li>
+
+                                    <span class="topform-tit">建立者</span>陳先生</li>
+                                <li>
+
+                                    <span class="topform-tit">類別</span>貸後追蹤・新聞事件・其他</li>
+                                <li>
+
+                                    <span class="topform-tit">指定回覆日期</span>2018/01/07</li>
+                                <li>
+
+                                    <span class="topform-tit">附件</span>
+                                    <a href="#" class="alink">
+                                        <i class="fa fa-paperclip iconspace" aria-hidden="true"></i>日本東京機票</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-5  col-sm-12 col-md-12">
+                            <ul class="listinfo">
+
+
+
+
+                                <li>
+
+                                    <span class="topform-tit">內容</span>
+                                    <span class="form-body">急里為精實動較一小夜心所主分遠出條快展在處住要們種一城海馬再正品利動候子天人看一回這士反內之建：有兒！會不響品前有現水得面常。喜了說校，人得東自……依說成果、小考士明票的。</span>
+                                </li>
+
+
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-sm-12 collapseInfoTit">
+                        <a class="close-area" href="javascript:void(0)" onclick="collapse(this, 'fa-angle-double-up', 'fa-angle-double-down')" name="collapseInfo">收闔案件資訊
+                            <i id="collapseInfo_icon" class="fa fa-angle-double-up iconspace" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </section>
+
+
+            <!-- Customer 表單 -->
+            <div id="data-list-0" class="table-responsive data-list">
+                <table class="table tableinfo">
+                    <thead>
+                        <tr>
+
+
+                            <th scope="col ">名單狀態
+                                <i class="fa fa-question-circle-o iconspace" aria-hidden="true" data-toggle="modal" data-target="#stateInfo" data-whatever="@mdo "></i>
+                            </th>
+
+                            <th scope="col ">戶名</th>
+                            <th scope="col ">統一編號</th>
+                            <th scope="col ">處理經辦</th>
+                            <th scope="col " class="text-center">處理紀錄</th>
+                            <th scope="col "></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+
+                            <td>
+
+                                <span class="light light-red" tabindex="0" data-toggle="tooltip" title="追蹤逾期">
+
+                                </span>未執行</td>
+
+                            <td>
+                                <a href="customer_data.html" class="alink" target=_blank>陳先生</a>
+                            </td>
+                            <td>A1212121212</td>
+                            <td>理大吉</td>
+                            <td class="text-center">
+                                <a data-toggle="collapse" data-target="#dolist-data" aria-expanded="false" aria-controls="dolist-data">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </td>
+                            <td class="money-right">
+
+                                <button class="btn btn-outline-primary btn-sm " type="button" data-toggle="modal" data-target="#addnote" data-whatever="@mdo ">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+
+
+                            </td>
+
+                        </tr>
+                        <tr aria-expanded="false" class="hiddenRow">
+                            <td colspan="11" class=" cardOpen" style="padding: 0 !important">
+                                <div class="accordian-body collapse dolist-data" id="dolist-data">
+                                    <div class="cardOpen-content">
+                                        <h4>處理紀錄
+                                        </h4>
+                                        <ul class="market-mark">
+                                            <li>
+                                                <span class="dot dot-main"></span>
+                                                <div class="warp shadow">
+                                                    <div class="date">2012/09/12</div>
+                                                    <div class="note">第三次處理結果</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="dot dot-main"></span>
+                                                <div class="warp shadow">
+                                                    <div class="date">2012/09/12</div>
+                                                    <div class="note">行銷顧客精彩歲月專案，顧客表達高度興趣，預計 2018/01/27 再度拜訪
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="dot dot-main"></span>
+                                                <div class="warp shadow">
+                                                    <div class="date">2012/09/12</div>
+                                                    <div class="note">行銷顧客精彩歲月專案，顧客表達高度興趣，預計 2018/01/27 再度拜訪
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td>
+
+                                <span class="light light-red" tabindex="0" data-toggle="tooltip" title="追蹤逾期">
+
+                                </span>未執行</td>
+
+                            <td>
+                                <a href="customer_data.html" class="alink" target=_blank>陳先生</a>
+                            </td>
+                            <td>A1212121212</td>
+                            <td>理大吉</td>
+                            <td class="text-center">
+                                <a data-toggle="collapse" data-target="#dolist-data" aria-expanded="false" aria-controls="dolist-data">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </td>
+                            <td class="money-right">
+
+                                <button class="btn btn-outline-primary btn-sm " type="button" data-toggle="modal" data-target="#addnote" data-whatever="@mdo ">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+
+
+                            </td>
+
+                        </tr>
+                        <tr>
+
+
+                            <td>
+
+                                <span class="light light-red" tabindex="0" data-toggle="tooltip" title="追蹤逾期">
+
+                                </span>未執行</td>
+
+                            <td>
+                                <a href="customer_data.html" class="alink" target=_blank>陳先生</a>
+                            </td>
+                            <td>A1212121212</td>
+                            <td>理大吉</td>
+                            <td class="text-center">
+                                <a data-toggle="collapse" data-target="#dolist-data" aria-expanded="false" aria-controls="dolist-data">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </td>
+                            <td class="money-right">
+
+                                <button class="btn btn-outline-primary btn-sm " type="button" data-toggle="modal" data-target="#addnote" data-whatever="@mdo ">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+
+
+                            </td>
+
+                        </tr>
+                        <tr>
+
+
+                            <td>
+
+                                <span class="light light-red" tabindex="0" data-toggle="tooltip" title="追蹤逾期">
+
+                                </span>未執行</td>
+
+                            <td>
+                                <a href="customer_data.html" class="alink" target=_blank>陳先生</a>
+                            </td>
+                            <td>A1212121212</td>
+                            <td>理大吉</td>
+                            <td class="text-center">
+                                <a data-toggle="collapse" data-target="#dolist-data" aria-expanded="false" aria-controls="dolist-data">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </td>
+                            <td class="money-right">
+
+                                <button class="btn btn-outline-primary btn-sm " type="button" data-toggle="modal" data-target="#addnote" data-whatever="@mdo ">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+
+
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- pageNum -->
+            <nav class="navNum navbar-light">
+                <form class="form-inline">
+                    <div>
+                        <button class=" btn-sm pageNum">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </button>
+                        <button class=" btn-sm pageNum">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                        <span class="loanChartNote">1 of 1</span>
+                    </div>
+                    <div>
+                        <span class="loanChartNote">Items per page:
+                            <select class="form-control inputstyle">
+                                <option>50</option>
+                            </select>
+                        </span>
+                    </div>
+                </form>
+            </nav>
+            <!-- 編輯備註 -->
+            <div class="modal fade" id="addnote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">編輯備註</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label class="note">備註
+                                    <span class="markRed">*</span>
+                                </label>
+                                <label class="float-right ps_note">(0/250)</label>
+                                <textarea class="form-control inputstyletextArea" rows="5" placeholder="請輸入..."></textarea>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-gry btnLeft" data-dismiss="modal" aria-label="Close">暫存</button>
+                            <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                            <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">結案</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 撤回總行 -->
+            <div class="modal fade" id="backToBank" tabindex="-1" role="dialog" aria-labelledby="backToBank" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">撤回名單（3)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>你確定要撤回這 3 筆名單嗎？請告知我們撤回的原因，謝謝！</p>
+                            <div class="form-group">
+                                <label>原因
+                                    <span class="markRed">*</span>
+
+                                </label>
+                                <span class="float-right ps_note">(0/300)</span>
+                                <textarea class="form-control inputstyletextArea" rows="5" placeholder="請輸入..."></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal" aria-label="Close">撤回
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var myChart;
+    var modalChart;
+    var preTarget;
+
+    $(document).ready(function () {
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        // fix two step modal problem
+        $(document).on('shown.bs.modal', '.modal', function () {
+            $(document.body).addClass('modal-open')
+        })
+        $(document).on('hidden.bs.modal', '.modal', function () {
+            $(document.body).removeClass('modal-open')
+        })
+        $('.selectpicker').selectpicker({
+            style: 'inputstyleSelect',
+
+        });
+        // daterange 
+        var year = new Date().getFullYear() + 100;
+
+        $('input[name="daterange"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                'YYYY/MM/DD'));
+        });
+        $('input[name="daterange"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /**/
+        // singedate
+        $('input[name="singledate"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            singleDatePicker: true,
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="singledate"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD'));
+        });
+        $('input[name="singledate"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+
+        });
+        // clockpicker
+        $('input[name=clockpicker]').clockpicker({
+            autoclose: true,
+        });
+        /**/
+        var wrap = $(".content");
+        wrap.on("scroll", function (e) {
+            if (this.scrollTop > 138) {
+                $('.pills-tab-container').addClass("fix-tab");
+                document.getElementById("scroll-top").style.display = "block";
+                $('.nav-item.dropdown.more').addClass('show-more');
+            } else {
+                $('.pills-tab-container').removeClass("fix-tab");
+                document.getElementById("scroll-top").style.display = "none";
+                $('.nav-item.dropdown.more').removeClass('show-more');
+            }
+
+        });
+
+        $('#nav-dropdown a').click(function (e) {
+            e.preventDefault()
+            //console.log($('#pills-bank'))
+            //$('#pills-bank').tab('show');
+            $(this).tab('show');
+        })
+
+        $('.nav-pills').on('shown.bs.tab', 'a', function (e) {
+            console.log('aa')
+            if (preTarget) {
+                $(preTarget).removeClass('active');
+            }
+            preTarget = e.target;
+
+            var topEleHeight = 140;
+            var id = $(this).attr('name')
+            if (id) {
+                var top = $('#' + id).position().top + topEleHeight;
+                $('.content').animate({
+                    scrollTop: top
+                })
+            }
+
+
+        })
+
+    })
+
+    function openDatePicker(id) {
+        console.log('aaa')
+        var did = "#" + id
+        $(did).datepicker('show');
+    }
+
+    function scrollToTop() {
+
+        $('.content').scrollTop(0);
+
+    }
+
+    function smoothscroll() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+
+        if (currentScroll > 0) {
+            window.requestAnimationFrame(smoothscroll);
+            window.scrollTo(0, currentScroll - (currentScroll / 5));
+        }
+    }
+
+    // sidebar toggle
+    function toggle() {
+        var width = document.getElementById("sidebar").style.width;
+
+        if (width === "180px" || width === "") {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("main-content").style.marginLeft = "0px";
+            $('.top-container').css({
+                width: '100%'
+            })
+            $('button.btn.openClose i').removeClass('fa-caret-left').addClass('fa-caret-right');
+        } else {
+            document.getElementById("sidebar").style.width = "180px";
+            document.getElementById("main-content").style.marginLeft = "180px";
+            $('.top-container').css('width', '100%').css('width', '-=180px');
+            $('button.btn.openClose i').removeClass('fa-caret-right').addClass('fa-caret-left');
+        }
+    }
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    // collapse
+    function collapse(self, show_icon_class, hide_icon_class) {
+        var id = $(self).attr('name')
+        $('#' + id).collapse('toggle')
+
+        // collapse trigger
+        var trigger = id + '_show';
+        if (!this.hasOwnProperty(trigger)) {
+            var defaultTrigger = $('#' + id).hasClass('show')
+            this[trigger] = defaultTrigger;
+        } else {
+            this[trigger] = !this[trigger]
+        }
+
+        // icon transfer
+        var icon_id = '#' + id + '_icon'
+        if (this[trigger]) {
+            $(icon_id).removeClass(hide_icon_class).addClass(show_icon_class);
+        } else {
+            $(icon_id).removeClass(show_icon_class).addClass(hide_icon_class);
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,1710 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E.Sun</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <!-- select -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-select.min.css">
+    <!-- dateRangePicker -->
+    <link rel="stylesheet" type="text/css" href="./daterangepicker.css" />
+    <!-- googleApi -->
+    <link rel="stylesheet" type="text/css" href="./googleapi.css">
+    <!-- clockpicker -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-clockpicker.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script type="text/javascript" src="./popper.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="./bootstrap.min.js"></script>
+
+    <!-- moment -->
+    <script type="text/javascript" src="./moment-2.18.1.min.js"></script>
+    <!-- fontawesome -->
+    <script src="./fontawesome.js"></script>
+    <!-- chart.js & plugin -->
+    <script src="./Chart.min-2.7.1.js"></script>
+    <script src="./chartjs-pieceLabel-plugin.js"></script>
+    <!-- dateRangePicker -->
+    <script type="text/javascript" src="./daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="./bootstrap-clockpicker.min.js"></script>
+    <!-- select -->
+    <script type="text/javascript" src="./bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-select-zh_TW.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid pl-0 pr-0">
+        <!-- sidebar -->
+        <div id="sidebar" class="sidebar maingreen">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link headtitle " href="# ">新平台</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link active active" href="M_customer_search.html">顧客查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfo">名單管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfo" class="ullistno panel-collapse collapse show" role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search.html">
+                                名單查詢
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_myfavorite.html">
+                                我的最愛
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_todaytodo.html">
+                                今日行程
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_recheck.html">
+                                名單覆核
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_namelist_search_trans.html">
+                                名單分派
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Refferal_search.html">商機轉介查詢</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoTwo">行銷專區
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoTwo" class="ullistno panel-collapse collapse " role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_loan.html">
+                                貸款試算
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  " href="marketing_search_EDM.html">
+                                電子 DM
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_Map.html">
+                                行銷地圖
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="marketing_search_valuation.html">
+                                估價查詢
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link collapsed " data-toggle="collapse" href="#listinfoThree">後台管理
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+
+                    <ul id="listinfoThree" class="ullistno panel-collapse collapse " role="menu">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_character.html">
+                                角色權限
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_marketing.html">
+                                行銷團隊
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_email.html ">
+                                E-mail 樣板
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_notification.html">
+                                推播通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_arrange.html">
+                                總行指派案件
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_lateNotice.html">
+                                名單/案件逾期通知
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="M_Mange_tag.html">
+                                推薦產品標籤
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="M_Mange_productNum.html">
+                                產品參數
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="M_Mange_systemNum.html">
+                                系統參數
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="report_search.html">成效報表</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content" class="main-content">
+            <!-- navbar -->
+            <nav class="navbar navbar-light shadow sticky-top">
+                <form class="form-inline">
+                    <button type="button" onclick="toggle()" class="btn openClose">
+                        <i class="fa fa-caret-left iconspace" aria-hidden="true"></i>
+                    </button>
+                    <div class="input-group">
+                        <span class="input-group-addon inputstyle" id="basic-addon1">
+                            <i class="fa fa-search " aria-hidden="true"></i>
+                        </span>
+                        <input type="text" class="form-control inputstyle" placeholder="搜尋整站..." aria-describedby="basic-addon1">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="btn-group">
+                        <button type="button" class="btn notic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell iconspace fa-lg" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-bell">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading pr-3 pl-3">
+                                                    我的通知
+                                                    <a class="greenLink float-right">標示全部為已讀</a>
+                                                </div>
+                                                <div class="panel-body">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="read">
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">未分派名單3筆
+                                                                <br />
+                                                                <span class="loanChartNote">2018/01/29</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-center">
+                                                    <a class="greenLink ">查看歷史通知</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn dropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre " style="width:40px; height:40px; ">
+                            <i class="fa fa-angle-down iconspace" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right-person">
+
+
+                            <div class="container no-gutters">
+
+                                <div class="row">
+                                    <div class="col-12 pr-0 pl-0">
+                                        <div class="notice-board">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading pr-3 pl-3 pt-3 pb-4">
+                                                    <div class="row">
+                                                        <div class="col-4 ">
+
+
+                                                            <img src="img/E.SUN_Bank.png" class="rounded-circle " alt="Cinque Terre" style="width: 80px;height: 80px; position:absolute;">
+
+
+
+                                                        </div>
+                                                        <div class="col-6 pt-4">
+                                                            <span>你好，王小圖</span>
+                                                            <br />
+                                                            <span class="sub-tit">123123@esun.bank.com</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body pt-3">
+
+
+                                                    <a class="dropdown-item" href="#">切換代理人</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalREST" data-whatever="@mdo">休假代理</a>
+                                                    <a class="dropdown-item" href="#" onclick="{location.href='./login.html' }">登出</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </nav>
+            <!-- 休假代理 -->
+            <div class="modal fade" id="exampleModalREST" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">休假代理</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假起始日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假起始時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col ml-3">
+                                            <label>請假結束日
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇...">
+                                        </div>
+                                        <div class="col mr-3">
+                                            <label>請假結束時間
+                                                <span class="markRed">*</span>
+                                            </label>
+                                            <input class="form-control inputstyle" type="text" name="clockpicker" placeholder="請選擇...">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>代理人
+                                        <span class="markRed">*</span>
+                                    </label>
+                                    <select class="selectpicker inputstyleSelect">
+                                        <option value="" class="displayno">請選擇...</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                            <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 顧客查詢 -->
+            <section>
+
+                <!-- 麵包削 -->
+                <nav class="clearfix nav-top">
+                    <ol class="breadcrumb float-lg-left float-sm-none mb-sm-0">
+                        <li class="breadcrumb-item">
+                            <a href="M_customer_search.html">顧客查詢</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">特記對象查詢記錄</li>
+                    </ol>
+
+                </nav>
+
+
+                <h4 class="name">
+                    <span>特記對象查詢記錄</span>
+
+
+                </h4>
+
+                <div class="area shadow">
+                    <div id="search-section-0" class="form-row mr-0">
+                        <div class="form-group col-md-2 " name="name">
+                            <label>查詢者</label>
+                            <select class="selectpicker" data-live-search="true" multiple title="請選擇...">
+                                <option data-tokens="ketchup mustard">01234 李玉珊</option>
+                                <option data-tokens="mustard">01234 陳保珊</option>
+                                <option data-tokens="frosting">01234 陳玉珊</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group col-md-2 " name="custID">
+                            <label>被查詢者統編</label>
+                            <input id="custID" type="text" class="form-control inputstyle " placeholder="e.g. A123456789 " maxlength="10">
+                            <div class="error-msg">
+                                <span>請輸入正確身分證字號</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-2 " name="name">
+                            <label>被查詢者戶名</label>
+                            <input type="text" class="form-control inputstyle " placeholder="e.g. 王小明 ">
+                        </div>
+                        <div class="form-group col-md-2 " name="name">
+                            <label>查詢日期</label>
+                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇日期...">
+                        </div>
+                        <div class=" col-md-2 search-btn-pad">
+                            <button id="searchBtn-0" type="button " class="btn btn-ylw " onclick="search('result_1')">
+                                <i class="fa fa-search iconspace" aria-hidden="true"></i>搜尋</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Customer 表單 -->
+            <div id="result_1" class="table-responsive data-list displayno">
+                <table class="table table-striped tableinfo">
+                    <thead>
+                        <tr>
+                            <th scope="col ">查詢日期</th>
+                            <th scope="col ">查詢時間</th>
+                            <th scope="col ">查詢者</th>
+                            <th scope="col ">查詢者單位</th>
+                            <th scope="col ">被查詢者統一編號</th>
+                            <th scope="col ">被查詢者戶名</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2018/03/28</td>
+                            <td>10:23</td>
+                            <td>
+                                00362 王妍彤
+                            </td>
+                            <td>01234 板橋分行</td>
+                            <td>A123456789</td>
+                            <td>陳大發</td>
+                        </tr>
+                        <tr>
+                            <td>2018/03/28</td>
+                            <td>10:23</td>
+                            <td>
+                                00362 王妍彤
+                            </td>
+                            <td>01234 板橋分行</td>
+                            <td>A123456789</td>
+                            <td>陳大發</td>
+                        </tr>
+                        <tr>
+                            <td>2018/03/28</td>
+                            <td>10:23</td>
+                            <td>
+                                00362 王妍彤
+                            </td>
+                            <td>01234 板橋分行</td>
+                            <td>A123456789</td>
+                            <td>陳大發</td>
+                        </tr>
+                        <tr>
+                            <td>2018/03/28</td>
+                            <td>10:23</td>
+                            <td>
+                                00362 王妍彤
+                            </td>
+                            <td>01234 板橋分行</td>
+                            <td>A123456789</td>
+                            <td>陳大發</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- pageNum -->
+                <nav class="navNum navbar-light">
+                    <form class="form-inline">
+                        <div>
+                            <button class=" btn-sm pageNum">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </button>
+                            <button class=" btn-sm pageNum">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </button>
+                            <span class="loanChartNote">1 of 1</span>
+                        </div>
+                        <div>
+                            <span class="loanChartNote">Items per page:
+                                <select class="form-control inputstyle">
+                                    <option>50</option>
+                                </select>
+                            </span>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+
+        </div>
+
+
+        <!-- 新增潛在顧客-個人戶 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">新增潛在顧客</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>潛客類別
+                                    <span class="markRed">*</span>
+                                </label>
+                                <div class="form-row">
+                                    <div class="form-check">
+                                        <input id="woman" name="gender" checked="true" type="radio">
+                                        <label for="woman">個人戶</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="man" name="gender" type="radio">
+                                        <label for="man">公司戶</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>姓名</label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. 陳大明">
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>身分證字號</label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. A1234567">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>聯繫用手機
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. 09341118888">
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>生日</label>
+                                        <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇日期...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>通訊地址</label>
+                                <input type="text" class="form-control inputstyle">
+                            </div>
+                            <div class="form-group">
+                                <label>E-mail</label>
+                                <input type="text" class="form-control inputstyle" placeholder="e.g. 123123@eaun.banl.com">
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <p class="mb-2">
+                                <i class="fa fa-exclamation-triangle markRed" aria-hidden="true"></i>下列選項用於自建名單</p>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>產品別
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <select class="selectpicker inputstyleSelect">
+                                            <option>信貸</option>
+                                            <option>副擔保</option>
+                                            <option>房貸</option>
+                                            <option>小型事業(SB)</option>
+                                            <option>卡友貸</option>
+                                            <option>保險(儲蓄險、房貸壽險)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>來源說明</label>
+                                        <select class="selectpicker inputstyleSelect">
+                                            <option>客服轉介</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                        <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 新增潛在顧客-公司戶戶 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">新增潛在顧客</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>潛客類別
+                                    <span class="markRed">*</span>
+                                </label>
+                                <div class="form-row">
+                                    <div class="form-check">
+                                        <input id="woman" name="gender" type="radio">
+                                        <label for="woman">個人戶</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="man" name="gender" type="radio" checked="true">
+                                        <label for="man">公司戶</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>公司名稱
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. 陳大明">
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>公司統編</label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. A1234567">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>公司地址</label>
+                                <input type="text" class="form-control inputstyle">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>負責人姓名
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. 陳大明">
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>負責人統一編號</label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. A1234567">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>聯繫用手機
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <input type="text" class="form-control inputstyle" placeholder="e.g. 09341118888">
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>生日</label>
+                                        <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇日期...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>E-mail</label>
+                                <input type="text" class="form-control inputstyle" placeholder="e.g. 123123@eaun.banl.com">
+                            </div>
+
+
+                            <div class="dropdown-divider"></div>
+                            <p class="mb-2">
+                                <i class="fa fa-exclamation-triangle markRed" aria-hidden="true"></i>下列選項用於自建名單</p>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col ml-3">
+                                        <label>產品別
+                                            <span class="markRed">*</span>
+                                        </label>
+                                        <select class="selectpicker inputstyleSelect">
+                                            <option>信貸</option>
+                                            <option>副擔保</option>
+                                            <option>房貸</option>
+                                            <option>小型事業(SB)</option>
+                                            <option>卡友貸</option>
+                                            <option>保險(儲蓄險、房貸壽險)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col mr-3">
+                                        <label>來源說明</label>
+                                        <select class="selectpicker inputstyleSelect">
+                                            <option>客服轉介</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close">取消</button>
+                        <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 潛在顧客維護中-->
+        <div class="modal fade" id="maintain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">潛在顧客維護中</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <p>
+                            2018-04-16 / 信貸團隊 / 陳樂融 / 房貸，請與該經辦聯繫
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+
+
+                        <button type="button" class="btn btn-ylw ">知道了</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 確認ｐopup -->
+        <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">確認顯示內容</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <p>
+
+                            <span class="markRed">本行(含金控事業群)經理人以上之主管</span>，是否確認查詢？
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-gry" onclick="cancel()">確認</button>
+                        <button type="button" class="btn btn-ylw " onclick="confirm()">取消</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 滿版畫面 -->
+        <div class="modal-background displayno"></div>
+        <div id="mySidenav" class="TopChartNav">
+            <div class=" col-8 float-right sidepanel pr-0 pl-0">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h2 class="card-title Toptit shadow">行銷人員工作一覽</h2>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div id="switch_0" class="card ">
+                                <h5 class="card-title ">
+                                    <div class="row">
+                                        <div class="col-7 disablecolor">
+                                            <div class="row no-gutters subtit">A123122313</div>
+                                            <div class="row no-gutters tit">張美美</div>
+                                        </div>
+                                        <div class="col-5 float-right">
+                                            <div class="row">
+                                                <div class="col-8 ">
+                                                    <div class="row disablecolor">
+                                                        <div class="col-5 pl-0 pr-0">
+                                                            <span class="greenLink ps_note">20/30</span>
+                                                        </div>
+                                                        <div class="col-5 pr-0 pl-0 border-right">
+                                                            <div class="circle">
+
+
+                                                                <div class="p270"></div>
+                                                                <div class="p180"></div>
+                                                                <div class="p90"></div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="border-right">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-0 pl-0">
+                                                    <label class="switch">
+                                                        <input type="checkbox" name="switch_0">
+                                                        <span class="slider round" data-toggle="tooltip" title="開啟分派"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="card-body pt-0 disablecolor">
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-2 pr-0 pl-0">已追蹤</div>
+                                        <div class="col-2 pr-0 pl-0">未追蹤</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">網路進件</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">EBM</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">轉介</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="maturity">
+                                    <h6>到期日 2018/04/23</h6>
+                                </div>
+                            </div>
+                            <div id="switch_1" class="card">
+                                <h5 class="card-title">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="row no-gutters subtit">A123122313</div>
+                                            <div class="row no-gutters tit">張美美</div>
+                                        </div>
+                                        <div class="col-5 float-right">
+                                            <div class="row">
+                                                <div class="col-8 ">
+                                                    <div class="row">
+                                                        <div class="col-5 pl-0 pr-0">
+                                                            <span class="greenLink ps_note">20/30</span>
+                                                        </div>
+                                                        <div class="col-5 pr-0 pl-0 border-right">
+                                                            <div class="circle">
+
+
+                                                                <div class="p270"></div>
+                                                                <div class="p180"></div>
+                                                                <div class="p90"></div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="border-right">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-0 pl-0">
+                                                    <label class="switch">
+                                                        <input name="switch_1" type="checkbox" checked>
+                                                        <span class="slider round" data-toggle="tooltip" title="關閉分派"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="card-body pt-0 ">
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-2 pr-0 pl-0">已追蹤</div>
+                                        <div class="col-2 pr-0 pl-0">未追蹤</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">網路進件</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">EBM</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">轉介</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+
+                                </div>
+                                <div class="maturity displayno">
+                                    <h6>到期日 2018/04/23</h6>
+                                </div>
+                            </div>
+                            <div id="switch_2" class="card">
+                                <h5 class="card-title">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="row no-gutters subtit">A123122313</div>
+                                            <div class="row no-gutters tit">張美美</div>
+                                        </div>
+                                        <div class="col-5 float-right">
+                                            <div class="row">
+                                                <div class="col-8 ">
+                                                    <div class="row">
+                                                        <div class="col-5 pl-0 pr-0">
+                                                            <span class="greenLink ps_note">20/30</span>
+                                                        </div>
+                                                        <div class="col-5 pr-0 pl-0 border-right">
+                                                            <div class="circle">
+
+
+                                                                <div class="p270"></div>
+                                                                <div class="p180"></div>
+                                                                <div class="p90"></div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="border-right">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-0 pl-0">
+                                                    <label class="switch">
+                                                        <input name="switch_2" type="checkbox" checked>
+                                                        <span class="slider round" data-toggle="tooltip" title="關閉分派"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="card-body pt-0 ">
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-2 pr-0 pl-0">已追蹤</div>
+                                        <div class="col-2 pr-0 pl-0">未追蹤</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">網路進件</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">EBM</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">轉介</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+
+                                </div>
+                                <div class="maturity displayno">
+                                    <h6>到期日 2018/04/23</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div id="switch_3" class="card">
+                                <h5 class="card-title">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="row no-gutters subtit">A123122313</div>
+                                            <div class="row no-gutters tit">張美美</div>
+                                        </div>
+                                        <div class="col-5 float-right">
+                                            <div class="row">
+                                                <div class="col-8 ">
+                                                    <div class="row">
+                                                        <div class="col-5 pl-0 pr-0">
+                                                            <span class="greenLink ps_note">20/30</span>
+                                                        </div>
+                                                        <div class="col-5 pr-0 pl-0 border-right">
+                                                            <div class="circle">
+
+
+                                                                <div class="p270"></div>
+                                                                <div class="p180"></div>
+                                                                <div class="p90"></div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="border-right">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-0 pl-0">
+                                                    <label class="switch">
+                                                        <input name="switch_3" type="checkbox" checked>
+                                                        <span class="slider round" data-toggle="tooltip" title="關閉分派"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="card-body pt-0 ">
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-2 pr-0 pl-0">已追蹤</div>
+                                        <div class="col-2 pr-0 pl-0">未追蹤</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">網路進件</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">EBM</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">轉介</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+
+                                </div>
+                                <div class="maturity displayno">
+                                    <h6>到期日 2018/04/23</h6>
+                                </div>
+                            </div>
+                            <div id="switch_4" class="card">
+                                <h5 class="card-title">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="row no-gutters subtit">A123122313</div>
+                                            <div class="row no-gutters tit">張美美</div>
+                                        </div>
+                                        <div class="col-5 float-right">
+                                            <div class="row">
+                                                <div class="col-8 ">
+                                                    <div class="row">
+                                                        <div class="col-5 pl-0 pr-0">
+                                                            <span class="greenLink ps_note">20/30</span>
+                                                        </div>
+                                                        <div class="col-5 pr-0 pl-0 border-right">
+                                                            <div class="circle">
+
+
+                                                                <div class="p270"></div>
+                                                                <div class="p180"></div>
+                                                                <div class="p90"></div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="border-right">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-0 pl-0">
+                                                    <label class="switch">
+                                                        <input name="switch_4" type="checkbox" checked>
+                                                        <span class="slider round" data-toggle="tooltip" title="關閉分派"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="card-body pt-0 ">
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-2 pr-0 pl-0">已追蹤</div>
+                                        <div class="col-2 pr-0 pl-0">未追蹤</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">網路進件</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">EBM</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">轉介</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+
+                                </div>
+                                <div class="maturity displayno">
+                                    <h6>到期日 2018/04/23</h6>
+                                </div>
+                            </div>
+                            <div id="switch_5" class="card">
+                                <h5 class="card-title">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="row no-gutters subtit">A123122313</div>
+                                            <div class="row no-gutters tit">張美美</div>
+                                        </div>
+                                        <div class="col-5 float-right">
+                                            <div class="row">
+                                                <div class="col-8 ">
+                                                    <div class="row">
+                                                        <div class="col-5 pl-0 pr-0">
+                                                            <span class="greenLink ps_note">20/30</span>
+                                                        </div>
+                                                        <div class="col-5 pr-0 pl-0 border-right">
+                                                            <div class="circle">
+
+
+                                                                <div class="p270"></div>
+                                                                <div class="p180"></div>
+                                                                <div class="p90"></div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="border-right">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-0 pl-0">
+                                                    <label class="switch">
+                                                        <input name="switch_5" type="checkbox" checked>
+                                                        <span class="slider round" data-toggle="tooltip" title="關閉分派"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="card-body pt-0 ">
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-2 pr-0 pl-0">已追蹤</div>
+                                        <div class="col-2 pr-0 pl-0">未追蹤</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">網路進件</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">EBM</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="Longchartarea">
+                                                <span class="loanChartNote">轉介</span>
+                                                <span class="loanChartNote float-right sidepanel">60%</span>
+                                                <div class="Longchart sidepanel">
+                                                    <div class="value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-3">2</div>
+                                        <div class="col-2 pt-3">2</div>
+                                    </div>
+
+                                </div>
+                                <div class="maturity displayno">
+                                    <h6>到期日 2018/04/23</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 設定到期日 -->
+        <div class="modal fade" id="todate" tabindex="-1" role="dialog" aria-labelledby="todate" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="todate">設定到期日</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label>日期</label>
+                            <input class="form-control inputstyle" type="text" name="singledate" placeholder="請選擇日期...">
+                        </div>
+                        <h6>
+                            <i class="fa fa-info-circle iconspace" aria-hidden="true"></i>時間到期後則自動開啟，該行銷人員可繼續接受分派</h6>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-gry" data-dismiss="modal" aria-label="Close" onclick="saveToDate = false;">取消</button>
+                        <button type="button" class="btn btn-ylw " data-dismiss="modal" aria-label="Close" onclick="saveToDate = true;">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var custType = 0;
+    var custID = '';
+    var custIDIValid = true;
+    $(document).ready(function () {
+        // clockpicker
+        $('input[name=clockpicker]').clockpicker({
+            autoclose: true,
+        });
+        // fix two step modal problem
+        $(document).on('shown.bs.modal', '.modal', function () {
+            $(document.body).addClass('modal-open')
+        })
+        $(document).on('hidden.bs.modal', '.modal', function () {
+            $(document.body).removeClass('modal-open')
+        })
+
+        $('.selectpicker').selectpicker({
+            style: 'inputstyleSelect',
+
+        });
+        // daterange 
+        var year = new Date().getFullYear() + 100;
+
+        $('input[name="daterange"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                'YYYY/MM/DD'));
+        });
+        $('input[name="daterange"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /**/
+        // singedate
+        $('input[name="singledate"]').daterangepicker({
+            "locale": {
+                "format": "YYYY/MM/DD/",
+                "separator": " - ",
+                "applyLabel": "確認",
+                "cancelLabel": "清除",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "日",
+                    "一",
+                    "二",
+                    "三",
+                    "四",
+                    "五",
+                    "六"
+                ],
+                "monthNames": [
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月"
+                ],
+                "firstDay": 0,
+            },
+            singleDatePicker: true,
+            autoUpdateInput: false,
+            showDropdowns: true,
+            maxDate: '12/31/' + year
+        });
+        $('input[name="singledate"]').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('YYYY/MM/DD'));
+        });
+        $('input[name="singledate"]').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /**/
+        //$('input[name=custtype]').filter('[value=' + custType + ']').prop('checked', true);
+        $('input[name=custtype]').on('change', function () {
+            custType = $(this).val();
+            $('input[name=custtype]').each(function () {
+                var id = $(this).val();
+                $('#search-section-' + id).removeClass('show');
+            })
+
+            $('#search-section-' + custType).addClass('show');
+        });
+
+        $('#custID').on('focus', function (e) {
+            if (e.target.value == '') {
+                $('div[name=custID]').removeClass('error')
+                return;
+            }
+            var reg = new RegExp(/^[A-Z][12][0-9]{8}$/)
+            custIDIValid = reg.test(e.target.value);
+            custIDIValid ? $('#search-section-0 div[name=custID]').removeClass('error') : $(
+                '#search-section-0 div[name=custID]').addClass('error');
+        })
+        $('#custID').on('blur', function (e) {
+            if (e.target.value == '') {
+                $('#search-section-0 div[name=custID]').removeClass('error')
+                return;
+            }
+            var reg = new RegExp(/^[A-Z][12][0-9]{8}$/)
+            custIDIValid = reg.test(e.target.value);
+            custIDIValid ? $('#search-section-0 div[name=custID]').removeClass('error') : $(
+                '#search-section-0 div[name=custID]').addClass('error');
+        })
+
+        $('#custID').on('keyup', function (e) {
+            var reg = new RegExp(/^[A-Z][12][0-9]{8}$/)
+            custIDIValid = reg.test(e.target.value);
+            custIDIValid ? $('#search-section-0 div[name=custID]').removeClass('error') : $(
+                '#search-section-0 div[name=custID]').addClass('error');
+        })
+
+        $('#search-section-0').on('keyup', function () {
+            var disabled = true;
+            $("#search-section-0 :input[type=text]").each(function () {
+                if ($(this).attr('id') == 'custID') {
+                    disabled = !custIDIValid
+                } else {
+                    disabled = ($(this).val() == '');
+                }
+                if (!disabled) {
+                    return false;
+                } // break out of loop
+            });
+
+            $('#searchBtn-0').prop('disabled', disabled);
+        })
+
+        $('#search-section-1').on('keyup', function () {
+            var disabled = true;
+            $("#search-section-1 :input[type=text]").each(function () {
+                if ($(this).attr('id') == 'custID') {
+                    disabled = !custIDIValid
+                } else {
+                    disabled = ($(this).val() == '');
+                }
+                if (!disabled) {
+                    return false;
+                } // break out of loop
+            });
+
+            $('#searchBtn-1').prop('disabled', disabled);
+        })
+
+        // 行銷人員 switch 
+        $('label.switch').each(function (index, el) {
+            var input = $(el).find('input');
+            $(input).on('change', function (event) {
+                var checked = $(this).prop('checked');
+                var parentId = '#' + $(this).prop('name');
+                var title = $(parentId).find('.card-title .row .col-7');
+                var circle = $(parentId).find('.card-title .row .col-5 .row .col-8 .row')
+                var body = $(parentId).find('.card-body');
+                var maturity = $(parentId).find('.maturity');
+                var tooltip = $(parentId).find('span[data-toggle=tooltip]');
+                if (checked) {
+                    $(title).removeClass('disablecolor');
+                    $(body).removeClass('disablecolor');
+                    $(circle).removeClass('disablecolor');
+                    $(maturity).addClass('displayno');
+                    $(tooltip).tooltip('hide').attr('data-original-title', '關閉分派')
+                    tooltipId = '';
+                } else {
+                    $(title).addClass('disablecolor');
+                    $(body).addClass('disablecolor');
+                    $(circle).addClass('disablecolor');
+                    $(maturity).removeClass('displayno');
+                    $(tooltip).tooltip('hide').attr('data-original-title', '開啟分派');
+                    $('#todate').css('z-index', 10001).modal('show');
+                    $('.modal-backdrop').css('z-index', 10000);
+                    tooltipId = parentId;
+                }
+            })
+        });
+        $('#todate').on('hidden.bs.modal', function () {
+            if (saveToDate) {
+                return;
+            } else {
+                var input = $(tooltipId).find('input[type=checkbox]');
+                $(input).prop('checked', true)
+                $(input).trigger('change');
+            }
+        })
+        /**/
+    });
+
+    function onSearchCust() {
+        // show table
+        $('input[name=custtype]').each(function () {
+            var id = $(this).val();
+            $('#data-list-' + id).removeClass('show');
+        })
+
+        $('#data-list-' + custType).addClass('show');
+
+        var text = $('#custNum').val();
+        if (text == 'error') {
+            var htmlString = $('#search_error').html();
+            $('#data-list-0').html(htmlString)
+        }
+
+    }
+
+    function onClearSearchParam() {
+        var string = '#search-section-' + custType + ' :input[type=text]'
+        $(string).each(function () {
+            $(this).val('')
+        });
+        $('div[name=custID]').removeClass('error');
+        $('#searchBtn-' + custType).prop('disabled', true);
+    }
+
+    function cancel() {
+        $('#confirm').modal('toggle');
+    }
+
+    function confirm() {
+        var page = parseInt(custType) + 1
+        location.href = 'data_' + page + '.html'
+    }
+
+    // sidebar toggle
+    function toggle() {
+        var width = document.getElementById("sidebar").style.width;
+
+        if (width === "180px" || width === "") {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("main-content").style.marginLeft = "0px";
+            $('.top-container').css({
+                width: '100%'
+            })
+            $('button.btn.openClose i').removeClass('fa-caret-left').addClass('fa-caret-right');
+        } else {
+            document.getElementById("sidebar").style.width = "180px";
+            document.getElementById("main-content").style.marginLeft = "180px";
+            $('.top-container').css('width', '100%').css('width', '-=180px');
+            $('button.btn.openClose i').removeClass('fa-caret-right').addClass('fa-caret-left');
+        }
+    }
+
+    function openDatePicker(id) {
+        console.log('aaa')
+        var did = "#" + id
+        $(did).datepicker('show');
+    }
+
+    function search(id) {
+        $('#' + id).removeClass('displayno');
+    }
+
+    function onSearchCust() {
+        // show table
+
+        var text = $('#custNum').val();
+        if (text == 'error') {
+            var htmlString = $('#search_error').html();
+            $('#data-list-0').html(htmlString)
+        }
+
+    }
+</script>
+
+<script id="search_error" type="text/template">
+    <div class="nodata">
+        <div>
+            <img src="img/img_empty.png" class="d-inline-block align-top" alt="">
+        </div>
+        <h6>查無資料</h6>
+        <button type="button " class="btn btn-outline-primary my-2 my-sm-0 " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">新增潛在顧客</button>
+    </div>
+</script>
+
+</html>
